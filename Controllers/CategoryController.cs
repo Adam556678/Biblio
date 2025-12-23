@@ -30,8 +30,9 @@ namespace Biblio.Controllers
             {
                 _db.Categories.Add(obj);
                 _db.SaveChanges();
+                return RedirectToAction("Index");   //Returns HTTP 302 Redirect
             }
-            return RedirectToAction("Index");   //Returns HTTP 302 Redirect
+            return View();
         }
     }
 }

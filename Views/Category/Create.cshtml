@@ -9,10 +9,16 @@
         <div class="mb-3">
             <label for="name">Category Name</label>
             <input asp-for="Name" type="text" id="name" class="form-control">
+            <span asp-validation-for="Name" class="text-danger"></span>
         </div>
         <div class="mb-3">
             <label for="order">Display Order</label>
-            <input asp-for="DisplayOrder" type="text" id="order" class="form-control">
+            <input asp-for="DisplayOrder"
+       type="number"
+       min="1"
+       max="100"
+       class="form-control" />
+            <span asp-validation-for="DisplayOrder" class="text-danger"></span>
         </div>
         <div class="row">
             <div class="col-6 col-md-3">                
@@ -24,3 +30,7 @@
         </div>
     </div>
 </form>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
