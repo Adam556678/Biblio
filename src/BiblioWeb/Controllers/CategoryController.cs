@@ -2,7 +2,7 @@ using System.Data.Common;
 using Biblio.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Biblio.Controllers
+namespace BiblioWeb.Controllers
 {
     public class CategoryController : Controller
     {

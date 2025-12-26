@@ -2,7 +2,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Biblio.Models;
 
-namespace Biblio.Controllers;
+namespace BiblioWeb.Controllers;
 
 public class HomeController : Controller
 {
